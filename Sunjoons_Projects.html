@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="stylemode.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunjoons_Projects</title>
+</head>
+
+<body>
+<main>
+  <h1>My Projects</h1>
+
+  <h2>Wooden Shoerack</h2>
+  <img src="project_imgs/Shoerack.jpg" alt="A shoerack :D" style="width:400px" >
+  <div class="box2">
+    <p>I have made many things out of wood, and this is my most impressive. I made it from IKEA bedslats, as well as old metal grates from my family's old one. This project took around 3-4 days of around 6 hours each. I used mostly my table saw, a drill, a pencil, and my dreams. </p>  </div>
+
+  <h2>Wooden Weapons</h2>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="project_imgs/Swords.png"></div>
+      <div class="swiper-slide"><img src="project_imgs/Naginata.jpg"></div>
+      <div class="swiper-slide"><img src="project_imgs/Kunai.jpg"></div>
+      <div class="swiper-slide"><img src="project_imgs/Spear.jpg"></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div class="box2">
+    <p>I always liked making weapons. They are very cool and are the main thing I am motivated to make. I have a katana, wakazashi, naginata(spear with katana head), kunai, a spear I made for my English class, and a sword I made for my calculus class. They take a bit of time but the results are pretty cool. </p>  </div>
+
+  <h2>Gameboy type stuff</h2>
+  <img src="project_imgs/Gameboy.jpg" alt="A Wooden Gameboy" style="transform:rotate(-90deg); width:400px; height:auto;" >
+  <div class="box2">
+    <p>This was a project I had to make for a summer program. They went over how to make it and pretty much it was just like legos, build according to the instructions. Although I did not design it, our instructors taught us how to make it from the ground up</p>  </div>
+</main>
+
+<hr>
+<a href="Padilla_Webpage.html" class="box3">Back To Home</a>
+<div class="spacer"></div>
+
+<footer>You Never Mess With the Joonster!</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: '.swiper-pagination' },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  });
+</script>
+</body>
+</html>

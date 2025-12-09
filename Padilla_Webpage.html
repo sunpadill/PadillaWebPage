@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=merriweather' rel='stylesheet'>
+ <link rel="stylesheet" href="stylemode.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Sunjoon Zone</title>
+</head>
+<body>
+<div class="star-layer"></div>
+<div class="star-layer2"></div>
+<div class="angle"></div>
+<div class="angle2"></div>
+<div class="angle3"></div>
+<main>
+    <div class="title-group">
+      <h2 class="countercw">The</h2>
+      <h1 class="clockwise">Sunjoon</h1>
+      <h2 class="countercw">Zone</h2>
+    </div>
+    <div class="row">
+      <img src="sunjoon_moment.jpg" alt="that's me!" style="height:256px;">
+      <div class="box2" id="introBox">
+        <h6>The Sunjoon Zone is a magical space where you can learn about a narcisist</h6>
+        <p>Loads of people say Hi!</p>
+      </div>
+    </div>
+    <hr>
+    <div class="box1">
+      <p>This is my website. It is made in HTML. Please enjoy, as I have spent a lot of time on it. Also, please acknowledge the very cool sliding gradients in the background. Those took a long time, but they were apart of the initial vision and came out well.</p>
+    </div>
+
+  <div class="spacer"></div>
+  <h2>Check Out These Things</h2>
+  <section class="grid-section">
+    
+    <div class="grid">
+        <a href="About_Sunjoon.html" class="grid-item">About Me</a>
+        <a href="Sunjoons_Skillz.html" class="grid-item">My Skills</a>
+        <a href="Sunjoons_Projects.html" class="grid-item">Things I've Done</a>
+        <a href="Sunjoons_Digits.html" class="grid-item">Contact me(if you dare)</a>
+    </div>
+  </section>
+  <script>
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const angle = document.querySelector(".angle");
+      angle.style.backgroundPositionY = `${scrollTop * -1.25 - 300}px`;
+      const angle2 = document.querySelector(".angle2");
+      angle2.style.backgroundPositionY = `${scrollTop * 1.5-350}px`;
+      const angle3 = document.querySelector(".angle3");
+      angle3.style.backgroundPositionY = `${scrollTop * -1.25+880}px`;
+    });
+  </script>
+    
+    
+    
+</main>
+</body>
+<footer>You Never Mess With the Joonster!</footer>
+</html>
